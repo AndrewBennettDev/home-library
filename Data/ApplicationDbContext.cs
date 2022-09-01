@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using HomeLibrary.Models;
 
 namespace HomeLibrary.Data
 {
@@ -9,5 +10,6 @@ namespace HomeLibrary.Data
             : base(options)
         {
         }
+        public DbSet<HomeLibrary.Models.Book>? Book { get; set; }
     }
 }
